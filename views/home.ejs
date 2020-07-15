@@ -1,0 +1,53 @@
+<html>
+    <head>
+        
+        <title>        <%= title %>   </title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/home.css">
+
+    </head>
+    <body>
+        
+            
+                
+                <h1 id="page-header">
+                    <i class="fas fa-address-book"> </i>
+                    My Contact List
+                </h1>
+        <div class="center" id="name-phone">
+             
+            <ol>
+                <% for (i of contact_list){%>
+                    
+                    <li>
+                        <div class="contact-detail">
+                            <p> 
+                                <i class="fas fa-id-badge"></i>    
+                                    <%=i.name %> || <%= i.Phone %>
+                            </p> 
+                                   
+                                
+                            
+                        </div>
+                        <div class="delete-button">
+                            <a href="/delete-contact/?id=<%= i._id %>">
+                                <i class="fas fa-window-close"></i>
+                            </a>
+                        </div>
+                            <!-- <p> <%=i.Phone %></p> -->
+                        
+                    </li>
+            
+                    <%}%>
+            </ol>
+        </div>
+        <div class="center">
+            <form action="/contact-list" method="POST" >
+                <input type="text" name="name" placeholder="Type your name..." required>
+                <input type="number" name="Phone" placeholder="Enter Phone" required>
+                <button type="submit" >Add Contact</button>
+            </form>
+        </div>
+        <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+body{
+
+    margin: 0;
+    
+    
+}
+
+#page-header{
+    text-align: center;
+    color: grey;
+    margin-top: 25px;
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+    
+    font-size: 2rem;
+}
+
+p{
+    
+    color: cadetblue;
+}
+
+.center{
+    width: max-content;
+    height: auto;
+    position: relative;
+    left: 36%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: max-content;
+    background-color: rgb(155, 155, 185);
+}
+
+.contact-detail{
+    display: flex;
+    justify-content: space-between;
+}
+
