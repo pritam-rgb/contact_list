@@ -4,7 +4,7 @@ var path = require('path');
 
  var port=process.env.port || 8000;
  
- var db= require('./config/mongoose');
+//  var db= require('./config/mongoose');
 
  var Contact= require('./model/contact');
  var app=express();
