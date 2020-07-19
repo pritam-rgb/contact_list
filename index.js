@@ -1,13 +1,13 @@
-var express= require('express');
+const express= require('express');
 
-var path = require('path');
+const path = require('path');
 
- var port=process.env.port || 8000;
+ const port=process.env.port || 8000;
  
- var db= require('./config/mongoose');
+ const db= require('./config/mongoose');
 
- var Contact= require('./model/contact');
- var app=express();
+ const Contact= require('./model/contact');
+ const app=express();
 
  app.set('view engine','ejs');
 
